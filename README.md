@@ -22,8 +22,7 @@ or any associated subsidiaries, logos or trademarks.
     Placeholder for the next version (at the beginning of the line):
     ### **WORK IN PROGRESS**
 -->
-
-### **WORK IN PROGRESS**
+### 0.5.4 (2024-07-29)
 * (foxriver76) fixed the pairing process due to changes in json config
 * (foxriver76) stability improvements
 

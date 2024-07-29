@@ -1,6 +1,6 @@
 {
   "name": "iobroker.philips-tv",
-  "version": "0.5.3",
+  "version": "0.5.4",
   "engines": {
     "node": ">=14.0.0"
   },

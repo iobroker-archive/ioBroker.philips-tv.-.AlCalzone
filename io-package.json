@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "philips-tv",
-    "version": "0.5.3",
+    "version": "0.5.4",
     "news": {
+      "0.5.4": {
+        "en": "fixed the pairing process due to changes in json config\nstability improvements",
+        "de": "festlegen des paarungsprozesses durch änderungen in json config\nstabilitätsverbesserungen",
+        "ru": "фиксирует процесс парирования из-за изменений в конфигурации json\nулучшение стабильности",
+        "pt": "corrigiu o processo de emparelhamento devido a alterações na configuração json\nmelhoria da estabilidade",
+        "nl": "het koppelingsproces als gevolg van wijzigingen in json-configuratie vast te stellen\nstabiliteitsverbeteringen",
+        "fr": "fixe le processus d'appariement en raison de changements dans la configuration de json\namélioration de la stabilité",
+        "it": "fisso il processo di accoppiamento a causa delle modifiche in json config\nmiglioramento della stabilità",
+        "es": "fija el proceso de emparejamiento debido a cambios en json config\nmejora de la estabilidad",
+        "pl": "naprawić proces parowania z powodu zmian w json config\npoprawa stabilności",
+        "uk": "виправлено процес паріння через зміни в json config\nпідвищення стійкості",
+        "zh-cn": "由于 json 配置的改变而固定配对过程\n稳定改善"
+      },
       "0.5.3": {
         "en": "update lib",
         "de": "aktualisierung lib",
@@ -78,18 +91,6 @@
         "es": "fijar",
         "pl": "zbudować",
         "zh-cn": "f 固定建筑"
-      },
-      "0.4.3": {
-        "en": "try to fix `ESOCKETTIMEDOUT`",
-        "de": "versuchen, ESOCKETTIMEDOUT zu beheben",
-        "ru": "попробуйте исправить ESOCKETTIMEDOUT",
-        "pt": "tentar corrigir ESOCKETTIMEDOUT",
-        "nl": "probeer ESOCKETTIMEDOUT",
-        "fr": "essayez de réparer ESOCKETTIMEDOUT",
-        "it": "cercare di risolvere ESOCKETTIMEDOUT",
-        "es": "tratar de arreglar ESOCKETTIMEDOUT",
-        "pl": "próbuje naprawić ESOCKETTIMEDOUT",
-        "zh-cn": "试图确定ESOCKETTIMEDOUT"
       }
     },
     "titleLang": {
