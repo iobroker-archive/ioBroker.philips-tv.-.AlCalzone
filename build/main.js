@@ -203,10 +203,18 @@ class PhilipsTvAndroid extends utils.Adapter {
             }
           }
         };
-        await this.tv.launchApplication(googleAssistantCommand);
+        try {
+          await this.tv.launchApplication(googleAssistantCommand);
+        } catch (e) {
+          this.log.error(`Could not set HDMI input via Google assistant: ${this.errorToText(e)}`);
+        }
         break;
       case "hdmiInput": {
-        await this.tv.setSource(state.val);
+        try {
+          await this.tv.setSource(state.val);
+        } catch (e) {
+          this.log.error(`Could not set HDMI input: ${this.errorToText(e)}`);
+        }
         break;
       }
       default:

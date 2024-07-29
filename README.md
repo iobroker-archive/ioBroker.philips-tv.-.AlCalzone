@@ -25,6 +25,7 @@ or any associated subsidiaries, logos or trademarks.
 
 ### **WORK IN PROGRESS**
 * (foxriver76) fixed the pairing process due to changes in json config
+* (foxriver76) stability improvements
 
 ### 0.5.3 (2023-02-27)
 * (foxriver76) update lib
