@@ -214,7 +214,7 @@ class PhilipsTvAndroid extends utils.Adapter {
     }
   }
   async onMessage(obj) {
-    if (typeof obj.message !== "string") {
+    if (!obj.message || typeof obj.message !== "object" || !("data" in obj.message) || typeof obj.message.data !== "string") {
       this.sendTo(
         obj.from,
         obj.command,
@@ -225,7 +225,7 @@ class PhilipsTvAndroid extends utils.Adapter {
     }
     if (obj.command === "pairing") {
       try {
-        await this.startPairing(obj.message);
+        await this.startPairing(obj.message.data);
       } catch (e) {
         if (e.message === "ETIMEDOUT") {
           this.sendTo(obj.from, obj.command, { error: "Timeout" }, obj.callback);
@@ -244,7 +244,7 @@ class PhilipsTvAndroid extends utils.Adapter {
         return;
       }
       try {
-        await this.performAuthentication(this.authTimestamp, obj.message);
+        await this.performAuthentication(this.authTimestamp, obj.message.data);
       } catch (e) {
         this.sendTo(obj.from, obj.command, { error: this.errorToText(e) }, obj.callback);
       }

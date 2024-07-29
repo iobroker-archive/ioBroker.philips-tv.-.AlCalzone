@@ -118,6 +118,8 @@
     "mac":{
       "type": "text",
       "label": "mac",
+      "validator": "data.mac.toUpperCase() === data.mac",
+      "validatorNoSaveOnError": true,
       "help": {
         "en": "If you want to use Wake-On-Lan",
         "de": "Wenn Sie Wake-On-Lan verwenden möchten",
@@ -210,7 +212,7 @@
       "type": "sendTo",
       "label": "pairingButton",
       "command": "pairing",
-      "jsonData": "${data.ip}",
+      "jsonData": "{ \"data\": \"${data.ip}\" }",
       "hidden": "data.apiVersion !== 6 || data.apiType !== 'Android'"
     },
     "pinCode": {
@@ -228,7 +230,7 @@
       },
       "type": "sendTo",
       "command": "submitPin",
-      "jsonData": "${JSON.stringify(data.pinCode)}",
+      "jsonData": "{ \"data\": \"${data.pinCode}\" }",
       "label": "submitPin",
       "hidden": "data.apiVersion !== 6 || data.apiType !== 'Android'",
       "confirm": {
